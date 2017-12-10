@@ -962,9 +962,9 @@ SitemapController.prototype = {
 							message: 'The request interval must be numeric'
 						},
 						callback: {
-							message: 'The request interval must be atleast 2000 milliseconds',
+							message: 'The request interval must be atleast 100 milliseconds',
 							callback: function(value, validator) {
-								return value >= 2000;
+								return value >= 100;
 							}
 						}
 					}
@@ -978,9 +978,9 @@ SitemapController.prototype = {
 							message: 'The page laod delay must be numeric'
 						},
 						callback: {
-							message: 'The page load delay must be atleast 500 milliseconds',
+							message: 'The page load delay must be atleast 100 milliseconds',
 							callback: function(value, validator) {
-								return value >= 500;
+								return value >= 100;
 							}
 						}
 					}
